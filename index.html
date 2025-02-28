@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deserts4U - Delicious Brownies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Deserts4U</div>
+            <div class="nav-links">
+                <a href="#menu" class="nav-link">Menu</a>
+                <button id="cartBtn" class="cart-btn">
+                    Cart <span id="cartCount">0</span>
+                </button>
+                <button id="authBtn" class="auth-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Indulge in Heavenly Brownies</h1>
+            <p>Handcrafted with love, delivered to your doorstep</p>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1589375025852-a66cca98b1b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Classic Brownies">
+                    <h3>Classic Brownies</h3>
+                </div>
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1612886623532-0a13c47f6f0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nutty Delights">
+                    <h3>Nutty Delights</h3>
+                </div>
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Premium Selection">
+                    <h3>Premium Selection</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Featured Products</h2>
+            <div id="productGrid" class="product-grid"></div>
+        </section>
+
+        <section class="featured-box">
+            <div class="featured-content">
+                <h2>Special of the Month</h2>
+                <p>Try our new Triple Chocolate Fudge Brownie with a scoop of vanilla ice cream!</p>
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Special Brownie">
+            </div>
+        </section>
+
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <h2>Shopping Cart</h2>
+                <div id="cartItems"></div>
+                <div id="cartTotal"></div>
+                <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>
+
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <h2>Login</h2>
+                <form id="authForm">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#" id="toggleAuth">Register</a></p>
+                </form>
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Deserts4U. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
